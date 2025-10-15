@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+]>
+<svg version="1.1" id="Layer_78" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="128px" height="128px" viewBox="-40.5 -40.5 128 128" enable-background="new -40.5 -40.5 128 128"
+	 xml:space="preserve">
+<g id="Lightning">
+	<circle opacity="0.25" enable-background="new    " cx="29.501" cy="29.834" r="58.666"/>
+	
+		<radialGradient id="SVGID_1_" cx="1137.1221" cy="2044.7217" r="83.3659" gradientTransform="matrix(1.0389 0 0 1.0361 -1142.0247 -2112.4719)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0.0516" style="stop-color:#FFEBEB"/>
+		<stop  offset="0.5215" style="stop-color:#ED3725"/>
+		<stop  offset="0.808" style="stop-color:#5E0000"/>
+		<stop  offset="1" style="stop-color:#ED3725"/>
+		<a:midPointStop  offset="0.0516" style="stop-color:#FFEBEB"/>
+		<a:midPointStop  offset="0.5" style="stop-color:#FFEBEB"/>
+		<a:midPointStop  offset="0.5215" style="stop-color:#ED3725"/>
+		<a:midPointStop  offset="0.5" style="stop-color:#ED3725"/>
+		<a:midPointStop  offset="0.808" style="stop-color:#5E0000"/>
+		<a:midPointStop  offset="0.5" style="stop-color:#5E0000"/>
+		<a:midPointStop  offset="1" style="stop-color:#ED3725"/>
+	</radialGradient>
+	<ellipse fill="url(#SVGID_1_)" cx="22.5" cy="22.667" rx="62.333" ry="62.166"/>
+</g>
+</svg>

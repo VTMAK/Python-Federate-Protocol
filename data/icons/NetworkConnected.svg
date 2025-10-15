@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Connected" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="128px" height="128px" viewBox="-40.5 -40.5 128 128" enable-background="new -40.5 -40.5 128 128"
+	 xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  height="75.334" width="150" x="181" y="218.333" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="56.835" y1="-11.1675" x2="56.835" y2="58.1675" gradientTransform="matrix(-1 0 0 1 40.335 0)">
+	<stop  offset="0" style="stop-color:#323232"/>
+	<stop  offset="0.3518" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.6403" style="stop-color:#646464"/>
+	<stop  offset="0.7708" style="stop-color:#A0A0A0"/>
+	<stop  offset="0.9944" style="stop-color:#323232"/>
+	<a:midPointStop  offset="0" style="stop-color:#323232"/>
+	<a:midPointStop  offset="0.5" style="stop-color:#323232"/>
+	<a:midPointStop  offset="0.3518" style="stop-color:#FFFFFF"/>
+	<a:midPointStop  offset="0.5" style="stop-color:#FFFFFF"/>
+	<a:midPointStop  offset="0.6403" style="stop-color:#646464"/>
+	<a:midPointStop  offset="0.5" style="stop-color:#646464"/>
+	<a:midPointStop  offset="0.7708" style="stop-color:#A0A0A0"/>
+	<a:midPointStop  offset="0.5" style="stop-color:#A0A0A0"/>
+	<a:midPointStop  offset="0.9944" style="stop-color:#323232"/>
+</linearGradient>
+<polygon fill="url(#SVGID_1_)" stroke="#000000" stroke-width="6" stroke-linejoin="round" points="-48.5,47.618 -5.834,47.499 
+	-5.834,58.167 15.5,58.167 15.5,-11.167 -5.834,-11.167 -5.834,-0.501 -48.5,-0.501 "/>
+<g>
+	<polygon fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" points="11.499,54.166 -1.834,54.166 -1.834,47.5 
+		-1.834,43.489 -5.845,43.499 -44.499,43.607 -44.499,3.499 -5.834,3.499 -1.834,3.499 -1.834,-0.502 -1.834,-7.167 11.499,-7.167 
+		11.499,54.166 	"/>
+</g>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="126.1689" y1="-11.1675" x2="126.1689" y2="58.1675" gradientTransform="matrix(1 0 0 1 -68.002 0)">
+	<stop  offset="0" style="stop-color:#323232"/>
+	<stop  offset="0.3518" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.6403" style="stop-color:#646464"/>
+	<stop  offset="0.7708" style="stop-color:#A0A0A0"/>
+	<stop  offset="0.9944" style="stop-color:#323232"/>
+	<a:midPointStop  offset="0" style="stop-color:#323232"/>
+	<a:midPointStop  offset="0.5" style="stop-color:#323232"/>
+	<a:midPointStop  offset="0.3518" style="stop-color:#FFFFFF"/>
+	<a:midPointStop  offset="0.5" style="stop-color:#FFFFFF"/>
+	<a:midPointStop  offset="0.6403" style="stop-color:#646464"/>
+	<a:midPointStop  offset="0.5" style="stop-color:#646464"/>
+	<a:midPointStop  offset="0.7708" style="stop-color:#A0A0A0"/>
+	<a:midPointStop  offset="0.5" style="stop-color:#A0A0A0"/>
+	<a:midPointStop  offset="0.9944" style="stop-color:#323232"/>
+</linearGradient>
+<polygon fill="url(#SVGID_2_)" stroke="#000000" stroke-width="6" stroke-linejoin="round" points="95.5,47.618 42.168,47.499 
+	42.168,58.167 20.833,58.167 20.833,-11.167 42.168,-11.167 42.168,-0.501 95.5,-0.501 "/>
+<g>
+	<polygon fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" points="38.169,54.168 24.834,54.168 
+		24.834,-7.168 38.169,-7.168 38.169,-0.5 38.169,3.5 42.169,3.5 91.5,3.5 91.5,43.611 42.177,43.499 38.169,43.49 38.169,47.498 
+		38.169,54.168 	"/>
+</g>
+</svg>

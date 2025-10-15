@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="128px" height="128px" viewBox="-40.5 -40.5 128 128" enable-background="new -40.5 -40.5 128 128"
+	 xml:space="preserve">
+<g id="Layer_126">
+	<path stroke="#000000" stroke-width="6" stroke-linecap="round" d="M17.844,77.077c0,0-33.941-33.941-37.712-37.712
+		c-3.96-3.96-11.314,3.771-7.543,7.543c3.771,3.771,37.712,37.712,37.712,37.712c4.686,4.686,11.313,3.771,15.083,0
+		c3.771-3.771,4.688-10.399,0.002-15.086l-37.712-37.712c-4.686-4.687-11.313-3.771-15.085,0"/>
+	<path stroke="#000000" stroke-width="6" stroke-linecap="square" stroke-linejoin="round" d="M25.387,69.534
+		c4.686,4.687,3.77,11.315-0.002,15.086L83.84,26.165c6.571-6.571,7.543-11.313,1.886-16.969L48.014-28.517
+		c-4.687-4.687-10.399-4.687-16.972,1.886l-58.453,58.453c3.771-3.771,10.4-4.687,15.085,0L25.387,69.534z"/>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="74.167" y1="20.8325" x2="95.501" y2="20.8325" gradientTransform="matrix(-0.7071 0.7071 0.7071 0.7071 32.9297 -20.2664)">
+		<stop  offset="0" style="stop-color:#9AA0A5"/>
+		<stop  offset="0.4606" style="stop-color:#D0D3D5"/>
+		<stop  offset="0.6047" style="stop-color:#E2E4E5"/>
+		<stop  offset="1" style="stop-color:#F1F1F2"/>
+		<a:midPointStop  offset="0" style="stop-color:#9AA0A5"/>
+		<a:midPointStop  offset="0.5172" style="stop-color:#9AA0A5"/>
+		<a:midPointStop  offset="0.6047" style="stop-color:#E2E4E5"/>
+		<a:midPointStop  offset="0.5" style="stop-color:#E2E4E5"/>
+		<a:midPointStop  offset="1" style="stop-color:#F1F1F2"/>
+	</linearGradient>
+	<path fill="url(#SVGID_1_)" stroke="#323232" stroke-width="6" stroke-linecap="round" d="M6.531,73.307
+		c0,0-33.941-33.941-37.712-37.712c-3.96-3.961-11.314,3.771-7.542,7.542C-34.953,46.908-1.012,80.85-1.012,80.85
+		c4.687,4.686,11.313,3.771,15.084,0c3.771-3.771,4.688-10.399,0.002-15.086l-37.713-37.712c-4.686-4.687-11.313-3.771-15.085,0"/>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="36.834" y1="58.166" x2="36.834" y2="-16.5" gradientTransform="matrix(-0.7071 0.7071 0.7071 0.7071 32.9297 -20.2664)">
+		<stop  offset="0" style="stop-color:#9E9B92"/>
+		<stop  offset="0.2485" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.7719" style="stop-color:#FCFCFC"/>
+		<stop  offset="1" style="stop-color:#9E9B92"/>
+		<a:midPointStop  offset="0" style="stop-color:#9E9B92"/>
+		<a:midPointStop  offset="0.5" style="stop-color:#9E9B92"/>
+		<a:midPointStop  offset="0.2485" style="stop-color:#FFFFFF"/>
+		<a:midPointStop  offset="0.5" style="stop-color:#FFFFFF"/>
+		<a:midPointStop  offset="0.7719" style="stop-color:#FCFCFC"/>
+		<a:midPointStop  offset="0.5" style="stop-color:#FCFCFC"/>
+		<a:midPointStop  offset="1" style="stop-color:#9E9B92"/>
+	</linearGradient>
+	<path fill="url(#SVGID_2_)" stroke="#323232" stroke-width="6" stroke-linecap="square" stroke-linejoin="round" d="M14.074,65.764
+		c4.686,4.687,3.769,11.314-0.002,15.086l58.456-58.456c6.571-6.571,7.542-11.312,1.885-16.969L36.7-32.288
+		c-4.687-4.687-10.398-4.687-16.971,1.886l-58.453,58.454c3.771-3.771,10.399-4.687,15.085,0L14.074,65.764z"/>
+	
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="6.1665" y1="58.167" x2="6.1665" y2="36.835" gradientTransform="matrix(0.7071 -0.7071 0.7071 0.7071 -11.6189 24.2808)">
+		<stop  offset="0" style="stop-color:#5A5146"/>
+		<stop  offset="0.655" style="stop-color:#A4A299"/>
+		<stop  offset="0.9888" style="stop-color:#5A5146"/>
+		<a:midPointStop  offset="0" style="stop-color:#5A5146"/>
+		<a:midPointStop  offset="0.5" style="stop-color:#5A5146"/>
+		<a:midPointStop  offset="0.655" style="stop-color:#A4A299"/>
+		<a:midPointStop  offset="0.5" style="stop-color:#A4A299"/>
+		<a:midPointStop  offset="0.9888" style="stop-color:#5A5146"/>
+	</linearGradient>
+	<path fill="url(#SVGID_3_)" stroke="#323232" stroke-width="6" d="M14.073,50.68l15.084-15.084l7.542,7.542
+		c0,0,7.542,7.542,3.771,11.313C36.699,58.222,27.271,67.649,23.5,71.421c3.771-3.771,1.887-9.427-1.885-13.198
+		C17.843,54.45,14.073,50.68,14.073,50.68z"/>
+	<g id="Layer_127" display="none">
+		<path display="inline" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="
+			M63.5-8.5c0,0-5.333,0-5.333,5.333S63.5,2.75,63.5,7.5s-5.333,5.333-5.333,5.333"/>
+		
+			<polyline display="inline" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" points="
+			36.834,-8.5 36.834,12.833 42.168,2.167 47.501,12.833 47.501,-8.5 		"/>
+		
+			<polyline display="inline" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" points="
+			26.167,-8.5 20.834,-8.5 20.834,12.833 26.167,12.833 		"/>
+		
+			<line display="inline" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="23.5" y1="2.167" x2="20.834" y2="2.167"/>
+		
+			<polyline display="inline" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" points="
+			2.167,12.833 2.167,-8.5 10.167,12.833 10.167,-8.5 		"/>
+	</g>
+	<g id="Layer_128" display="none">
+		
+			<polyline display="inline" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" points="
+			4.833,-8.5 -0.5,-8.5 -0.5,12.833 4.833,12.833 		"/>
+		
+			<line display="inline" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="2.166" y1="2.167" x2="-0.5" y2="2.167"/>
+		
+			<line display="inline" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="12.833" y1="-8.5" x2="20.833" y2="12.833"/>
+		
+			<line display="inline" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="20.833" y1="-8.5" x2="12.833" y2="12.833"/>
+		
+			<line display="inline" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="26.167" y1="-8.5" x2="36.833" y2="-8.5"/>
+		
+			<line display="inline" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="31.5" y1="-8.5" x2="31.5" y2="12.833"/>
+		<path display="inline" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="
+			M42.167,12.833V-8.5c0,0,8,0,8,5.333S47.5,2.167,47.5,2.167l2.667,10.667"/>
+		
+			<polyline display="inline" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" points="
+			55.5,12.833 60.833,-8.5 66.167,12.833 		"/>
+		
+			<line display="inline" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="55.5" y1="10.167" x2="66.167" y2="10.167"/>
+	</g>
+	<line fill="none" stroke="#323232" stroke-width="6" stroke-linejoin="round" x1="4.645" y1="45.021" x2="53.67" y2="-4.004"/>
+	<line fill="none" stroke="#323232" stroke-width="6" stroke-linejoin="round" x1="42.357" y1="37.479" x2="49.899" y2="29.938"/>
+	<line fill="none" stroke="#323232" stroke-width="6" stroke-linejoin="round" x1="53.671" y1="26.166" x2="61.214" y2="18.624"/>
+	<line fill="none" stroke="#323232" stroke-width="6" stroke-linejoin="round" x1="64.984" y1="14.853" x2="68.756" y2="11.082"/>
+	<line fill="none" stroke="#323232" stroke-width="6" x1="38.586" y1="26.168" x2="42.357" y2="22.396"/>
+	<line fill="none" stroke="#323232" stroke-width="6" x1="46.129" y1="18.624" x2="49.899" y2="14.853"/>
+	<line fill="none" stroke="#323232" stroke-width="6" x1="53.672" y1="11.082" x2="61.214" y2="3.54"/>
+	
+		<rect x="-14.157" y="1.196" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -1.2765 15.3107)" fill="#808080" width="64" height="16"/>
+	<line fill="none" stroke="#323232" stroke-width="6" x1="-16.098" y1="20.509" x2="-12.326" y2="16.738"/>
+	<line fill="none" stroke="#323232" stroke-width="6" x1="25.386" y1="-20.975" x2="29.157" y2="-24.746"/>
+</g>
+<g id="Layer_79">
+	<polygon stroke="#000000" stroke-width="6" stroke-linecap="square" stroke-linejoin="round" points="62.853,-19.012 
+		74.167,-7.697 40.226,26.244 74.167,60.186 62.853,71.5 28.911,37.559 -5.028,71.498 -16.342,60.184 17.598,26.244 -16.342,-7.697 
+		-5.028,-19.011 28.911,14.93 	"/>
+	
+		<radialGradient id="SVGID_4_" cx="21.8047" cy="25.3525" r="56.001" gradientTransform="matrix(0.7071 0.7071 -0.7071 0.7071 23.5 -9.8452)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.2434" style="stop-color:#FFA4A2"/>
+		<stop  offset="0.6008" style="stop-color:#FE1814"/>
+		<stop  offset="1" style="stop-color:#C71513"/>
+		<a:midPointStop  offset="0" style="stop-color:#FFFFFF"/>
+		<a:midPointStop  offset="0.5102" style="stop-color:#FFFFFF"/>
+		<a:midPointStop  offset="0.6008" style="stop-color:#FE1814"/>
+		<a:midPointStop  offset="0.5" style="stop-color:#FE1814"/>
+		<a:midPointStop  offset="1" style="stop-color:#C71513"/>
+	</radialGradient>
+	<polygon fill="url(#SVGID_4_)" stroke="#008CB2" stroke-width="6" stroke-linecap="square" stroke-linejoin="round" points="
+		54.932,-21.755 66.246,-10.441 32.305,23.5 66.246,57.441 54.932,68.756 20.991,34.814 -12.95,68.755 -24.264,57.44 9.676,23.5 
+		-24.264,-10.44 -12.95,-21.755 20.991,12.186 	"/>
+	
+		<radialGradient id="SVGID_5_" cx="21.8047" cy="25.3525" r="56.001" gradientTransform="matrix(0.7071 0.7071 -0.7071 0.7071 23.5 -9.8452)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.2434" style="stop-color:#FFA4A2"/>
+		<stop  offset="0.6008" style="stop-color:#FE1814"/>
+		<stop  offset="1" style="stop-color:#C71513"/>
+		<a:midPointStop  offset="0" style="stop-color:#FFFFFF"/>
+		<a:midPointStop  offset="0.5102" style="stop-color:#FFFFFF"/>
+		<a:midPointStop  offset="0.6008" style="stop-color:#FE1814"/>
+		<a:midPointStop  offset="0.5" style="stop-color:#FE1814"/>
+		<a:midPointStop  offset="1" style="stop-color:#C71513"/>
+	</radialGradient>
+	<polygon fill="url(#SVGID_5_)" stroke="#008CB2" stroke-width="6" stroke-linecap="square" stroke-linejoin="round" points="
+		54.932,-21.755 66.246,-10.441 32.305,23.5 66.246,57.441 54.932,68.756 20.991,34.814 -12.95,68.755 -24.264,57.44 9.676,23.5 
+		-24.264,-10.44 -12.95,-21.755 20.991,12.186 	"/>
+</g>
+</svg>
