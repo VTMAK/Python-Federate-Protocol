@@ -23,10 +23,10 @@ python examples\simpleFedPro\rtiSimple_FedPro.py -F MyFederation -t Aircraft -m 
 
 ## Project Structure
 FederateProtocol_Python/
-─ Compile_PYC.py                 # Python script for generating project bytecode in the bin directory USAGE: "python Compile_PYC.py"
-─ Create_Env.bat                 # Batch script for generating python environment with the proper libraries installed USAGE: "Create_Env {Environment Name}" (Name is optional)
-─ Bin/                           # Bin folder for holding pyc bytecode
-─ HLA1516_2025/                  # Python implementations of HLA standard files
+- Compile_PYC.py                 # Python script for generating project bytecode in the bin directory USAGE: "python Compile_PYC.py"
+- Create_Env.bat                 # Batch script for generating python environment with the proper libraries installed USAGE: "Create_Env {Environment Name}" (Name is optional)
+- Bin/                           # Bin folder for holding pyc bytecode
+- HLA1516_2025/                  # Python implementations of HLA standard files
     > RTI
         * enums.py #
         * exception.py #
@@ -36,7 +36,7 @@ FederateProtocol_Python/
         * rtiAmbassador.py #
         * rtiConfiguration.py #
         * typedefs.py #
-─ libsrc/
+- libsrc/
     >  fedPro/                   # FedPro protocol message handling
         * callbackRequestMessage.py      # Requests sent by server to initiate a Callback in FedPro Client
         * callbackResponseMessage.py     # Responses sent by FedPro client to indicate result of a callback Request
@@ -60,7 +60,7 @@ FederateProtocol_Python/
         * exception.py #
         * logger.py #
         * msgSocket.py #
-─ examples/
+- examples/
     >  hla_bounce/               # HLA bounce related files
         * hlaBounce_FedPro.py            # HLA Bounce main entry point
         * BallController.py              # HLA Bounce simple federate implementation
