@@ -2,20 +2,19 @@
     Python Federate Protocol © 2025 by MAK Technologies is licensed under CC BY-ND 4.0.
     To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/4.0/
 """
-import sys
 import os
 import time
 import math
 import struct
 from typing import Dict
 from libsrc.rtiUtil.logger import *
+from libsrc.rtiUtil import exceptions as Exceptions
+from HLA1516_2025.RTI import rtiConfiguration, exceptions, federateData
 from examples.hla_bounce.ballData import BallMap, Ball
 from examples.hla_bounce.regionData import DdmRegionMap
 from libsrc.fedProWrapper.rtiAmbassadorFedPro import Configuration
 from libsrc.fedPro.callResponseMessage import CallResponseMessage
 from libsrc.fedProWrapper.rtiAmbassadorFedPro import RtiAmbassadorFedPro
-from HLA1516_2025.RTI import rtiConfiguration, exception, federateData
-from libsrc.rtiUtil import exception
 from examples.hla_bounce.hlaBounceFederateAmbassador import HlaBounceFederateAmbassador
 from HLA1516_2025.RTI.handles import AttributeHandle, ObjectClassHandle, ObjectInstanceHandle
 
@@ -31,7 +30,7 @@ class BallController():
             Args:
                 ball_data (BallMap): Collection managing Ball objects (local and remote).
                 region_data (DdmRegionMap): Region data manager (Ddm / spatial filtering support).
-            Exceptions:
+            exceptions:
                 None (assumes provided maps are valid objects).
         """
 
@@ -89,11 +88,11 @@ class BallController():
                 log_error("ERROR: RTI connection is not OK after connect")
                 return False
                 
-        except exception.FedProSocketError as e:
+        except Exceptions.FedProSocketError as e:
             log_error("ERROR: Socket connection failed: " + str(type(e)))
             log_error(e.what())
             return False
-        except exception.RTIinternalError as e:
+        except exceptions.RTIinternalError as e:
             log_error("ERROR: Internal error during connection: " + str(type(e)))
             log_error(e.what())
             lastCheck = self.my_rti_ambassador.evoke_callback(3)
@@ -157,8 +156,8 @@ class BallController():
 
             Returns:
                 bool: True on success, False on any failure.
-            Exceptions:
-                Catches generic Exceptions, logs to stdout, returns False.
+            exceptions:
+                Catches generic exceptionss, logs to stdout, returns False.
         """
         try:
             # Connect to RTI
@@ -191,8 +190,8 @@ class BallController():
 
             Side Effects:
                 Processes queued callbacks via underlying ambassador.
-            Exceptions:
-                Suppresses any Exception (non-fatal UI loop support).
+            exceptions:
+                Suppresses any exceptions (non-fatal UI loop support).
         """
         try:
             # Evoke callbacks briefly; underlying code queues/dispatches
@@ -206,8 +205,8 @@ class BallController():
 
             Returns:
                 bool: True if all required handles resolved; False otherwise.
-            Exceptions:
-                Broad Exception caught, prints error, returns False.
+            exceptions:
+                Broad exceptions caught, prints error, returns False.
         """
         try:
             # Get object class handle (assuming a Ball class exists in FOM)
@@ -247,8 +246,8 @@ class BallController():
 
             Returns:
                 bool: True if publication completes; False on failure.
-            Exceptions:
-                Catches generic Exception; logs and returns False.
+            exceptions:
+                Catches generic exceptions; logs and returns False.
         """
         try:
             # Create attribute handle set for publication
@@ -264,7 +263,7 @@ class BallController():
             # Publish ball object class
             if self.ball_class_handle is None:
                 raise RuntimeError("Ball class handle not resolved")
-            self.my_rti_ambassador.publish_object_class_attributes(self.ball_class_handle, list(ball_attributes.values()))  # type: ignore[arg-type]
+            self.my_rti_ambassador.publish_object_class_attributes(self.ball_class_handle, set(ball_attributes.values()))
                 
             print("Successfully published ball attributes")
             return True
@@ -279,8 +278,8 @@ class BallController():
 
             Returns:
                 bool: True if subscription succeeds; False otherwise.
-            Exceptions:
-                Catches generic Exception; logs and returns False.
+            exceptions:
+                Catches generic exceptions; logs and returns False.
         """
         try:
             # Create attribute handle set for subscription
@@ -296,7 +295,7 @@ class BallController():
             # Subscribe to ball object class
             if self.ball_class_handle is None:
                 raise RuntimeError("Ball class handle not resolved")
-            self.my_rti_ambassador.subscribe_object_class_attributes(self.ball_class_handle, list(ball_attributes.values()))  # type: ignore[arg-type]
+            self.my_rti_ambassador.subscribe_object_class_attributes(self.ball_class_handle, set(ball_attributes.values()))
             
             print("Successfully subscribed to ball attributes")
             return True
@@ -319,8 +318,8 @@ class BallController():
                 color: Color index encoded as single byte.
             Returns:
                 bool: True on success; False on failure.
-            Exceptions:
-                Catches generic Exception, logs, returns False.
+            exceptions:
+                Catches generic exceptions, logs, returns False.
         """
         try:
             # Set default position if not provided
@@ -364,8 +363,8 @@ class BallController():
                 ball (Ball): Ball whose state should be published.
             Side Effects:
                 Updates ball.last_attr_send_time and sends attribute update via RTI ambassador.
-            Exceptions:
-                Broad Exception caught; logs error without raising.
+            exceptions:
+                Broad exceptions caught; logs error without raising.
         """
         try:
             if not ball.ball_id != "":
@@ -404,7 +403,7 @@ class BallController():
 
             Args:
                 dt (float): Elapsed simulation timestep in seconds.
-            Exceptions:
+            exceptions:
                 None explicitly; relies on Ball methods assumed safe.
         """
         for ball in self.ball_data.balls.values():
@@ -430,7 +429,7 @@ class BallController():
 
             Side Effects:
                 Deletes objects, resigns, may destroy federation if possible.
-            Exceptions:
+            exceptions:
                 Swallows most exceptions, logs warnings.
         """
         try:
@@ -460,8 +459,8 @@ class BallController():
                 ball_id (str): Identifier of the local ball to remove.
             Returns:
                 bool: True if removal attempted on existing local ball; False otherwise.
-            Exceptions:
-                Suppresses exceptions during RTI deletion; broad outer exception returns False.
+            exceptions:
+                Suppresses exceptions during RTI deletion; broad outer exceptions returns False.
         """
 
         ball = self.ball_data.get_ball(ball_id)
@@ -480,6 +479,6 @@ class BallController():
             
     def __del__(self):
         """
-            Ensure cleanup invoked during object finalization (ignores exceptions).
+            Ensure cleanup invoked during object finalization (ignores exceptionss).
         """
         self.cleanup()

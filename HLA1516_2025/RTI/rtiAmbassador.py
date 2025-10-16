@@ -4,11 +4,11 @@
 """
 from __future__ import annotations
 from HLA1516_2025.RTI.enums import Enums
+from HLA1516_2025.RTI.rtiConfiguration import RtiConfiguration
 from HLA1516_2025.RTI.federateAmbassador import FederateAmbassador
-from libsrc.rtiUtil.rtiConfiguration import RtiConfiguration
 from HLA1516_2025.RTI.typedefs import (AttributeHandleSet, AttributeHandleValueMap, FederationExecutionInformationVector,
                                     ParameterHandleValueMap, ConfigurationResult)
-from libsrc.rtiUtil.handles import AttributeHandle, FederateHandle, ObjectClassHandle, ObjectInstanceHandle, InteractionClassHandle, ParameterHandle
+from HLA1516_2025.RTI.handles import AttributeHandle, FederateHandle, ObjectClassHandle, ObjectInstanceHandle, InteractionClassHandle, ParameterHandle
 
 class RtiAmbassador:
     """Concrete no-op stub methods for RTI ambassador surface."""

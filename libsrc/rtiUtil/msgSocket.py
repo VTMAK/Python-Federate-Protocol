@@ -5,7 +5,7 @@
 from os import error
 import struct, socket
 from libsrc.rtiUtil.logger import *
-from libsrc.rtiUtil import exception
+from libsrc.rtiUtil import exceptions
 from libsrc.fedPro import fedProMessage
 
 # Wrapper class for a socket used to send and receive fedPro-style messages

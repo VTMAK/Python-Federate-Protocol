@@ -3,13 +3,11 @@
     Python Federate Protocol © 2025 by MAK Technologies is licensed under CC BY-ND 4.0.
     To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/4.0/
 """
-from math import log
-from typing import Any
 from libsrc.rtiUtil.logger import log_incoming
 from HLA1516_2025.RTI.federateData import FederateData
 from HLA1516_2025.RTI.federateAmbassador import FederateAmbassador
 from HLA1516_2025.RTI.typedefs import AttributeHandleValueMap, FederationExecutionInformationVector, ParameterHandleValueMap
-from HLA1516_2025.RTI.handles import AttributeHandle, InteractionClassHandle, ObjectInstanceHandle, ObjectClassHandle, FederateHandle, ParameterHandle, TransportationTypeHandle
+from HLA1516_2025.RTI.handles import AttributeHandle, InteractionClassHandle, ObjectInstanceHandle, ObjectClassHandle, FederateHandle, TransportationTypeHandle
 
 class SimpleFederateAmbassador(FederateAmbassador):
     """Federate Ambassador wrapper for Federate Protocol operation."""

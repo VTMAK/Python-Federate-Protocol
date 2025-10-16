@@ -2,18 +2,24 @@
     Python Federate Protocol © 2025 by MAK Technologies is licensed under CC BY-ND 4.0.
     To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/4.0/
 """
+import os
+import sys
 import time
-from HLA1516_2025.RTI import enums
 from libsrc.rtiUtil.logger import *
 from HLA1516_2025.RTI.handles import *
 from libsrc.fedPro import fedProMessage
-from libsrc.rtiUtil import exception, msgSocket
+from libsrc.rtiUtil import exceptions, msgSocket
 from HLA1516_2025.RTI.federateAmbassador import FederateAmbassador
 from libsrc.fedProWrapper.federateAmbassadorFedPro import FederateAmbassadorFedPro
+from libsrc.fedPro import callbackResponseMessage, heartBeatResponseMessage,  newSessionStatusMessage
 from libsrc.fedPro import callbackRequestMessage, callResponseMessage, heartBeatMessage,  newSessionMessage
-from libsrc.fedPro import callbackResponseMessage, callRequestMessage, heartBeatResponseMessage,  newSessionStatusMessage
-from FedProProtobuf.RTIambassador_pb2 import CallResponse
-from FedProProtobuf.FederateAmbassador_pb2 import CallbackRequest
+
+# Set the top directory to be two levels higher than the current directory
+current_dir = os.path.dirname(os.path.abspath(__file__))
+top_dir = os.path.dirname(current_dir)
+sys.path.insert(0, top_dir)
+from libsrc.FedProProtobuf.RTIambassador_pb2 import CallResponse
+from libsrc.FedProProtobuf.FederateAmbassador_pb2 import CallbackRequest
 
 
 
@@ -154,7 +160,7 @@ class FedProMsgHandler:
         try:
             # Send request
             if self.send_message(request) == -1:
-                raise exception.FedProMessageError("Socket failed to send message")
+                raise exceptions.FedProMessageError("Socket failed to send message")
             # Wait for response
             if request.my_msg_type is fedProMessage.MsgType.CTRL_HEARTBEAT:
                 return self.poll_for_call_response(timeout, expected_response_type, True) > 0
@@ -263,7 +269,7 @@ class FedProMsgHandler:
                 return True
             elif self.my_expected_response_type is fedProMessage.MsgType.UNKNOWN:
                 log_warning(f"Received Unexpected Call Response: Response Number {newsession.my_sequence_num} Request Type { newsession.my_msg_type}")
-                raise exception.FedProMessageError(f"Unexpected Call Response: Response Number {newsession.my_sequence_num} Request Type { newsession.my_msg_type}")
+                raise exceptions.FedProMessageError(f"Unexpected Call Response: Response Number {newsession.my_sequence_num} Request Type { newsession.my_msg_type}")
             else:
                 log_warning(f"Waiting for response {self.my_expected_response_type} for request #{self.my_expected_response_request_number}\n\
                     but received #{newsession.my_sequence_num} of type {newsession.my_msg_type}")
@@ -287,7 +293,7 @@ class FedProMsgHandler:
         try:
             if hasattr(callresponse, 'my_msg_type') and callresponse.my_msg_type != fedProMessage.MsgType.HLA_CALL_RESPONSE:
                 log_warning(f"WARNING: Expected Call response, got {callresponse.my_msg_type}")
-                raise exception.FedProMessageError(f"Unexpected message type: {callresponse.my_msg_type}")
+                raise exceptions.FedProMessageError(f"Unexpected message type: {callresponse.my_msg_type}")
             
             self.my_fedPro_response = callresponse
 
@@ -298,7 +304,7 @@ class FedProMsgHandler:
                 return True
             elif self.my_expected_response_type is fedProMessage.MsgType.UNKNOWN:
                 log_warning(f"Received Unexpected Call Response: Response Number {callresponse.my_sequence_num} Request Number { callresponse.my_hla_msg_type}")
-                raise exception.FedProMessageError(f"Unexpected Call Response: Response Number {callresponse.my_sequence_num} Request Number { callresponse.my_hla_msg_type}")
+                raise exceptions.FedProMessageError(f"Unexpected Call Response: Response Number {callresponse.my_sequence_num} Request Number { callresponse.my_hla_msg_type}")
             elif callresponse.my_hla_msg_type is the_call_response_ref.EXCEPTIONDATA_FIELD_NUMBER:
                 if callresponse.my_sequence_num is self.my_expected_response_request_number:
                     log_warning("Received Exception Data")
@@ -322,7 +328,7 @@ class FedProMsgHandler:
                 callbackrequest (CallbackRequestMessage): Parsed callback request message.
             Outputs:
                 Returns True if processed immediately; False if queued.
-            Exceptions:
+            exceptionss:
                 Raises AttributeError/TypeError or RTIinternalError on malformed message or missing ambassador.
         """
         try:
@@ -392,7 +398,7 @@ class FedProMsgHandler:
 
                 if message.my_msg_type is not fedProMessage.MsgType.INVALID and message.my_msg_size >= 0:
                     if (self.msg_types.get(message.my_msg_type) is None):
-                        raise exception.FedProMessageError(f"Unexpected message type: {message.my_msg_type}")
+                        raise exceptions.FedProMessageError(f"Unexpected message type: {message.my_msg_type}")
 
                     # Cast the message to be the correct type
                     message = self.msg_types[message.my_msg_type][0](message)

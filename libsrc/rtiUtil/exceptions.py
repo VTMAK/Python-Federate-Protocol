@@ -10,11 +10,6 @@ class BaseException(Exception):
     def what(self):
         return self._msg
 
-
-class FederateNotExecutionMember(BaseException):
-    pass
-class RTIinternalError(BaseException):
-    pass
 class FedProSocketError(BaseException):
     pass
 class FedProMessageError(BaseException):

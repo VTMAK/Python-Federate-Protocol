@@ -2,12 +2,9 @@
     Python Federate Protocol © 2025 by MAK Technologies is licensed under CC BY-ND 4.0.
     To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/4.0/
 """
-import time
 from libsrc.rtiUtil.logger import *
-from urllib import response
 from HLA1516_2025.RTI.enums import Enums
-import HLA1516_2025.RTI.exception as RtiException 
-import libsrc.rtiUtil.exception as Exception 
+import HLA1516_2025.RTI.exceptions as RtiException
 from HLA1516_2025.RTI.rtiAmbassador import RtiAmbassador
 from libsrc.fedPro import fedProMessage, heartBeatMessage
 from HLA1516_2025.RTI.rtiConfiguration import RtiConfiguration
@@ -15,7 +12,7 @@ from libsrc.fedProWrapper.fedProMessageHandler import FedProMsgHandler
 from libsrc.fedPro.callRequestMessage import CallRequestMessage
 from HLA1516_2025.RTI.federateAmbassador import FederateAmbassador
 from FedProProtobuf import RTIambassador_pb2, datatypes_pb2
-from HLA1516_2025.RTI.typedefs import ConfigurationResult
+from HLA1516_2025.RTI.typedefs import AttributeHandleSet, ConfigurationResult
 from libsrc.fedProWrapper.fedProMessageHandler import the_call_response_ref
 from HLA1516_2025.RTI.handles import AttributeHandle, FederateHandle, ObjectClassHandle,  ObjectInstanceHandle, InteractionClassHandle, ParameterHandle
 
@@ -161,10 +158,6 @@ class RtiAmbassadorFedPro(RtiAmbassador):
                 raise RtiException.RTIinternalError("Failed to create federation execution")
 
     # !ADD create federation execution with multiple FOM modules and MIM module
-
-    # !ADD Destroy a federation execution
-
-    # !ADD List all federation executions
 
     # !ADD Join a federation with no name specified
 
@@ -418,7 +411,7 @@ class RtiAmbassadorFedPro(RtiAmbassador):
                 log_error("ERROR: Failed to get parameter handle, Unexpected or No responses received")
             raise RtiException.RTIinternalError("Failed to get parameter handle")
     
-    def subscribe_object_class_attributes(self, class_handle: ObjectClassHandle, attr_set: list[AttributeHandle], active=True):
+    def subscribe_object_class_attributes(self, class_handle: ObjectClassHandle, attr_set: AttributeHandleSet, active=True):
         """
             Description:
                 Subscribe (actively or passively) to a set of attributes for an object class.
@@ -460,7 +453,7 @@ class RtiAmbassadorFedPro(RtiAmbassador):
                 log_error("ERROR: Failed to subscribe to object class attributes, Unexpected or No responses received")
             raise RtiException.RTIinternalError("Failed to subscribe to object class attributes, no response received")
 
-    def publish_object_class_attributes(self, class_handle: ObjectClassHandle, attr_set: list[AttributeHandle]):
+    def publish_object_class_attributes(self, class_handle: ObjectClassHandle, attr_set: AttributeHandleSet):
         """
             Description:
                 Publish an attribute set for the specified object class to advertise ownership/updates.
@@ -502,7 +495,6 @@ class RtiAmbassadorFedPro(RtiAmbassador):
                 log_error("ERROR: Failed to publish object class attributes, Unexpected or No responses received")
             raise RtiException.RTIinternalError("Failed to publish object class attributes, no response received")
 
-    # !ADD unsubscribe/unpublish object class attributes
 
     def subscribe_interaction_class(self, interaction_handle: InteractionClassHandle):
         """
@@ -567,10 +559,6 @@ class RtiAmbassadorFedPro(RtiAmbassador):
             else:
                 log_error("ERROR: Failed to publish interaction class, Unexpected or No responses received")
             raise RtiException.RTIinternalError("Failed to publish interaction class, no response received")
-
-
-    # !ADD unpublish interaction class
-
 
 
     def reserve_object_instance_name(self, object_instance_name: str):

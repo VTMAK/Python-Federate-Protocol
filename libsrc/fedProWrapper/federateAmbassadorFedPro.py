@@ -4,8 +4,8 @@
 """
 from typing import Any
 from libsrc.rtiUtil.logger import *
-from HLA1516_2025.RTI.handles import AttributeHandle, ParameterHandle
 from HLA1516_2025.RTI.federateAmbassador import FederateAmbassador
+from HLA1516_2025.RTI.handles import AttributeHandle, ParameterHandle
 from HLA1516_2025.RTI.typedefs import AttributeHandleValueMap, ParameterHandleValueMap
 from HLA1516_2025.RTI.handles import FederateHandle, InteractionClassHandle, ObjectClassHandle, ObjectInstanceHandle, TransportationTypeHandle
 

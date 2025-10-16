@@ -6,7 +6,7 @@ import os
 import time
 from libsrc.rtiUtil.logger import *
 import HLA1516_2025.RTI.handles as handles
-import HLA1516_2025.RTI.exception as RtiException
+import HLA1516_2025.RTI.exceptions as RtiException
 from HLA1516_2025.RTI.federateData import FederateData
 from HLA1516_2025.RTI.rtiConfiguration import RtiConfiguration
 from libsrc.fedPro.callResponseMessage import CallResponseMessage
@@ -191,7 +191,7 @@ class simpleFederate():
         
         #PUBLISH
         try:
-            self.my_rti_ambassador.publish_object_class_attributes(air_object_class_handle, list(self.my_data.my_attr_name_handles[air_object_class_handle].values()))
+            self.my_rti_ambassador.publish_object_class_attributes(air_object_class_handle, set(self.my_data.my_attr_name_handles[air_object_class_handle].values()))
 
         except Exception as e:
             log_error(f"Failed to publish object class attributes: {e}")

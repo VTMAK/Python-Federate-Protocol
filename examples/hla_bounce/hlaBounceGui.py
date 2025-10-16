@@ -2,26 +2,22 @@
     Python Federate Protocol © 2025 by MAK Technologies is licensed under CC BY-ND 4.0.
     To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/4.0/
 """
-import math
 import os
-import struct
 import time
-from typing import Any
 
 from PyQt5.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QSpinBox,
     QTextEdit, QSplitter, QAction, QListWidget, QGroupBox, QDialog,
-    QDialogButtonBox, QMessageBox, QWidgetAction, QMenuBar, QMenu,
-    QToolBar, QDoubleSpinBox, QComboBox, QGraphicsView, QGraphicsScene
+    QDialogButtonBox, QMessageBox, QWidgetAction, QDoubleSpinBox,
+    QComboBox, QGraphicsView, QGraphicsScene
 )
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import Qt, QTimer
 from PyQt5.QtSvg import QGraphicsSvgItem
 
 from examples.hla_bounce.ballController import BallController
-from examples.hla_bounce.ballData import BallMap,Ball
+from examples.hla_bounce.ballData import BallMap
 from examples.hla_bounce.regionData import DdmRegionMap
-from HLA1516_2025.RTI.handles import FederateHandle, ObjectInstanceHandle, TransportationTypeHandle
 
 ICON_PREAMBLE = "..\\FederateProtocol_Python\\data\\icons\\"
 MENU_ICONS = ["NetworkConnected.svg", "NetworkDisconnected.svg", "NetworkSubscribe.svg", "NetworkUnsubscribe.svg", "ObjectSphereAdd.svg"\
@@ -615,7 +611,7 @@ class HlaBounceGui(QMainWindow):
                 new_ball.dx = self.default_speed * _m.cos(rad)
                 new_ball.dy = self.default_speed * _m.sin(rad)
                 new_ball.color = self.default_color
-                new_ball.scale = self.default_size
+                new_ball.scale = self.default_size * 5
             self.my_ball_count += 1
             self.log_message(f"✓ Added a local Ball (speed={self.default_speed}, dir={self.default_direction_deg}°, color={self.default_color}, size={self.default_size})")
             # Refresh object lists to show new local Ball id

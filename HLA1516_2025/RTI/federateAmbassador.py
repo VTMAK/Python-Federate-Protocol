@@ -3,10 +3,9 @@
     To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/4.0/
 """
 from __future__ import annotations
-from typing import Any
 from HLA1516_2025.RTI.federateData import FederateData
 from HLA1516_2025.RTI.typedefs import AttributeHandleValueMap, FederationExecutionInformationVector, ParameterHandleValueMap
-from HLA1516_2025.RTI.handles import InteractionClassHandle, ObjectInstanceHandle, ObjectClassHandle, FederateHandle, TransportationTypeHandle, AttributeHandle, ParameterHandle
+from HLA1516_2025.RTI.handles import InteractionClassHandle, ObjectInstanceHandle, ObjectClassHandle, FederateHandle, TransportationTypeHandle
 
 class FederateAmbassador:
     """

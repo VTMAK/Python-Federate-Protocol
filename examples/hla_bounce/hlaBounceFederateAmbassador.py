@@ -4,12 +4,12 @@
 """
 import math
 import struct
-from HLA1516_2025.RTI.typedefs import AttributeHandleValueMap, FederationExecutionInformationVector, ParameterHandleValueMap
 from libsrc.rtiUtil.logger import *
 from examples.hla_bounce.ballData import Ball
 from HLA1516_2025.RTI.federateData import FederateData
 from HLA1516_2025.RTI.federateAmbassador import FederateAmbassador
-from HLA1516_2025.RTI.handles import AttributeHandle, InteractionClassHandle, ObjectInstanceHandle, ObjectClassHandle, FederateHandle, ParameterHandle, TransportationTypeHandle
+from HLA1516_2025.RTI.typedefs import AttributeHandleValueMap, FederationExecutionInformationVector, ParameterHandleValueMap
+from HLA1516_2025.RTI.handles import InteractionClassHandle, ObjectInstanceHandle, ObjectClassHandle, FederateHandle, TransportationTypeHandle
 
 class HlaBounceFederateAmbassador(FederateAmbassador):
     """
@@ -214,9 +214,7 @@ class HlaBounceFederateAmbassador(FederateAmbassador):
         direction_first : tuple[bool, float] = (False, -1.0)
         speed_first : tuple[bool, float] = (False, -1.0)
         for handle, value in attributes.items():
-            print("!!!!")
             self.my_data.my_object_instance_attrs[object_instance_handle][handle] = value
-            print("!!!!")
             attr_name = self.my_data.my_attr_handle_names[self.my_data.my_object_instance_classes[object_instance_handle]][handle]
             match attr_name:
                 case "Direction":
@@ -251,8 +249,8 @@ class HlaBounceFederateAmbassador(FederateAmbassador):
                     print(f"Received size: {temp_ball.scale}")
                 case _:
                     pass
-            print("!!!!")
-        temp_ball.ball_id = object_instance_handle.hex()
+        temp_ball.ball_id = self.my_data.my_object_instance_handle_names[producing_federate][object_instance_handle]
+        print(temp_ball.ball_id)
         fresh_Ball = self.my_ball_controller.ball_data.get_ball(temp_ball.ball_id)
         if fresh_Ball is None:
             # Create new remote Ball if it doesn't exist
