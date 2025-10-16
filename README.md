@@ -1,8 +1,9 @@
 # FederateProtocol_Python
 
-A Python implementation of an HLA (High Level Architecture) federate using the MAK RTI (Run-Time Infrastructure).
-This 
-is a Python port based on the C++ simpleFedPro example.
+This code should be usable with any RTI that has a federate protocol server.
+A Python implementation of the HLA (High Level Architecture) Federate Protocol. The HLA1516_2025/RTI module is a python representation of the HLA4 API (partially defined). The libsrc/fedPro module implements the Federate Protocol network messages. The libsrc/FedProProtobuf module is the protobuf encodings of the service calls, callbacks, and their parameters. The fedProWrapper module is a wrapper around the exchange of Federate Protocol messages that implements the HLA1516_2025/RTI API using the Federate Protocol.
+There are 2 example federates that use the HLA1516_2025/RTI API to demonstrate the use of the HLA Federate Protocol.
+In order to use the HLA Federate Protocol, the federates must connect to a Federate Protocol server. The MAK RTI provides an implementation of a Federate Protocol Server.
 
 ## How To Build
 1. Install python (made with python 3.13.3) and add to PATH
