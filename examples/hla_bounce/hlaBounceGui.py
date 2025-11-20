@@ -19,7 +19,7 @@ from examples.hla_bounce.ballController import BallController
 from examples.hla_bounce.ballData import BallMap
 from examples.hla_bounce.regionData import DdmRegionMap
 
-ICON_PREAMBLE = "..\\Python-Federate-Protocol\\data\\icons\\"
+ICON_PREAMBLE = "data\\icons\\"
 MENU_ICONS = ["NetworkConnected.svg", "NetworkDisconnected.svg", "NetworkSubscribe.svg", "NetworkUnsubscribe.svg", "ObjectSphereAdd.svg"\
         ,"ObjectSphereRemove.svg", "FileExit.svg", "FileDocument.svg", "SettingsSystem.svg"] 
 
